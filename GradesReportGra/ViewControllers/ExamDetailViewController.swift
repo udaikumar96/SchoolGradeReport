@@ -52,9 +52,9 @@ class ExamDetailViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-//        if let destination = segue.destination as? ExamDetailViewController {
-//            destination.subjectDetailsObj = selectedObj
-//        }
+        if let destination = segue.destination as? LineChartViewController {
+            destination.graphColor = backgroundColor
+        }
         super.prepare(for: segue, sender: sender)
     }
 

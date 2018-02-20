@@ -56,7 +56,7 @@ open class ChartLimitLine: ComponentBase
     {
         super.init()
         self.limit = limit
-        self.label = label
+       // self.label = label
     }
     
     /// set the line width of the chart (min = 0.2, max = 12); default 2

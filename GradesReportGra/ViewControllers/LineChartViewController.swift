@@ -47,12 +47,14 @@ class LineChartViewController: DemoBaseViewController {
         chartView.pinchZoomEnabled = true
 
         // x-axis limit line
-        let llXAxis = ChartLimitLine(limit: 10, label: "Index 10")
+        let llXAxis = ChartLimitLine(limit: 10, label: "")
         llXAxis.lineWidth = 4
-        llXAxis.lineDashLengths = [10, 10, 0]
-        llXAxis.labelPosition = .rightBottom
-        llXAxis.valueFont = .systemFont(ofSize: 10)
 
+        llXAxis.lineDashLengths = [10, 10, 0]
+        llXAxis.labelPosition = .leftBottom
+        llXAxis.valueFont = .systemFont(ofSize: 10)
+        chartView.xAxis.labelPosition = .bottom
+        chartView.xAxis.gridColor = UIColor.white
         chartView.xAxis.gridLineDashLengths = [10, 10]
         chartView.xAxis.gridLineDashPhase = 0
 
@@ -64,17 +66,13 @@ class LineChartViewController: DemoBaseViewController {
 //
         let leftAxis = chartView.leftAxis
         leftAxis.removeAllLimitLines()
-//        leftAxis.addLimitLine(ll1)
-
-        leftAxis.axisMaximum = 200
-        leftAxis.axisMinimum = -40
+        leftAxis.labelTextColor = UIColor.white
+        leftAxis.axisLineColor = UIColor.white
+        leftAxis.axisMaximum = 120
+        leftAxis.axisMinimum = 0
         leftAxis.gridLineDashLengths = [5, 5]
-        leftAxis.drawLimitLinesBehindDataEnabled = true
-       // chartView.rightAxis.drawLimitLinesBehindDataEnabled = false
+        leftAxis.drawLimitLinesBehindDataEnabled = false
         chartView.rightAxis.enabled = false
-
-        //[_chartView.viewPortHandler setMaximumScaleY: 2.f];
-        //[_chartView.viewPortHandler setMaximumScaleX: 2.f];
 
         let marker = BalloonMarker(color: UIColor(white: 180/255, alpha: 1),
                                    font: .systemFont(ofSize: 12),
@@ -107,20 +105,17 @@ class LineChartViewController: DemoBaseViewController {
         let set1 = LineChartDataSet(values: values, label: "")
         set1.drawIconsEnabled = false
         
-        set1.lineDashLengths = [5, 2.5]
-        set1.highlightLineDashLengths = [5, 2.5]
         set1.setColor(graphColor)
         set1.setCircleColor(.red)
         set1.lineWidth = 2
         set1.circleRadius = 4
         set1.drawCircleHoleEnabled = false
-        set1.valueFont = .systemFont(ofSize: 9)
-        set1.formLineDashLengths = [5, 2.5]
+        set1.valueFont = .systemFont(ofSize: 0)
         set1.formLineWidth = 1
         set1.formSize = 15
 
-        let gradientColors = [ChartColorTemplates.colorFromString("#00ff0000").cgColor,
-                              ChartColorTemplates.colorFromString("c").cgColor]
+        let gradientColors = [graphColor.withAlphaComponent(0.1).cgColor,graphColor.withAlphaComponent(0.4).cgColor]
+
         let gradient = CGGradient(colorsSpace: nil, colors: gradientColors as CFArray, locations: nil)!
 
         set1.fillAlpha = 1

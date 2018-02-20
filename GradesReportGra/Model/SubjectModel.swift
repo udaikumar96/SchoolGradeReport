@@ -22,6 +22,18 @@ class SubjectModel {
     var courseName: String {
         return responseDict["CourseName"]  as? String ?? ""
     }
+    
+    var percentage: String {
+        return responseDict["percentage"] as? String ?? ""
+    }
+    
+    var grade: String {
+        return responseDict["grade"] as? String ?? ""
+    }
+    
+    var lastDate: String {
+        return responseDict["lastDate"] as? String ?? ""
+    }
 
     init (withDict dict: [String: AnyObject] ) {
         responseDict = dict

@@ -59,8 +59,11 @@ class GradesSummaryTableViewController: UITableViewController {
             let customCell = cell as? GradeSummaryTableViewCell else { return cell }
         customCell.topView.backgroundColor = self.colorsArray[indexPath.row % colorsArray.count]
         let model = SubjectModel.init(withDict: customData[indexPath.row])
-        customCell.subjectIndex.text = model.courseId
+        customCell.subjectIndex.text = model.period
         customCell.subjectName.text = model.courseName
+        customCell.percentage.text = model.percentage
+        customCell.grade.text = model.grade
+        customCell.testDate.text = model.lastDate
         return customCell
         
     }

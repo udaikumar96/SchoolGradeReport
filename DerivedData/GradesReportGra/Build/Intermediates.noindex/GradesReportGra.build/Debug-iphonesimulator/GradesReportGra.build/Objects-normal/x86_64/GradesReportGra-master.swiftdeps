@@ -1,0 +1,17 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "2e39a8831ec57061e16db9c345fcbdc6"
+build_time: [1519107327, 527833000]
+inputs:
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/SubjectDetailsViewController.swift": [1519098038, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/LineChartViewController.swift": [1519098038, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/LoginViewController.swift": [1518650791, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/BalloonMarker.swift": [1519098038, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/Data/GradesReportConstants.swift": [1519079987, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/GradesSummaryTableViewController.swift": [1519107327, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/DemoBaseViewController.swift": [1519098038, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/Model/SubjectDetailsModel.swift": [1518650791, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/Views/AppDelegate.swift": [1518650791, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/Model/SubjectModel.swift": [1519106187, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/SubjectDetailsTableViewCell.swift": [1518650791, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/ExamDetailViewController.swift": [1519081950, 0]
+  "/Users/sc828f/Desktop/SchoolGradeReport/GradesReportGra/ViewControllers/GradeSummaryTableViewCell.swift": [1518650791, 0]

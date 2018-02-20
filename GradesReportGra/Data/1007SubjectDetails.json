@@ -1,0 +1,38 @@
+ [
+  {
+  "examId": 34,
+  "Description": "GF 5.0-5.2",
+  "Category": "Homework",
+  "ScoreGained": 40,
+  "ScoreMax": 40,
+  "percentage": "100.00%",
+  "Comment": "",
+  "DateCompleted": "1/10/2018",
+  "DueDate": "1/10/2018",
+  "GradingComplete": "No"
+  },
+  {
+  "examId": 35,
+  "Description": "Quarter 3 Citizenship",
+  "Category": "Citizenship",
+  "ScoreGained": 80,
+  "ScoreMax": 100,
+  "percentage": "80.00%",
+  "Comment": "ignored class duties",
+  "DateCompleted": "1/8/2018",
+  "DueDate": "1/8/2018",
+  "GradingComplete": "No"
+  },
+  {
+  "examId": 36,
+  "Description": "Unit 5 MC Test - Momentum",
+  "Category": "Test, Quizzes, Labs, Projects",
+  "ScoreGained": 62.5,
+  "ScoreMax": 100,
+  "percentage": "62.50%",
+  "Comment": "",
+  "DateCompleted": "1/24/2018",
+  "DueDate": "1/24/2018",
+  "GradingComplete": "Yes"
+  }
+  ]

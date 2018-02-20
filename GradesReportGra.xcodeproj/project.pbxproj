@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F32B97FE202284F600543877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B97FD202284F600543877 /* AppDelegate.swift */; };
+		F32B9800202284F600543877 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B97FF202284F600543877 /* LoginViewController.swift */; };
+		F32B9803202284F600543877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32B9801202284F600543877 /* Main.storyboard */; };
+		F32B9805202284F600543877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32B9804202284F600543877 /* Assets.xcassets */; };
+		F32B9808202284F600543877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32B9806202284F600543877 /* LaunchScreen.storyboard */; };
+		F32B9813202284F600543877 /* GradesReportGraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B9812202284F600543877 /* GradesReportGraTests.swift */; };
+		F32B981E202284F700543877 /* GradesReportGraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B981D202284F700543877 /* GradesReportGraUITests.swift */; };
+		F32B986520228E7900543877 /* GradesReports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32B986420228E7900543877 /* GradesReports.storyboard */; };
+		F32B986820228EE500543877 /* GradeSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B986620228EE500543877 /* GradeSummaryTableViewCell.swift */; };
+		F32B986920228EE500543877 /* GradeSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32B986720228EE500543877 /* GradeSummaryTableViewCell.xib */; };
+		F3612336203BD04700FE7751 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A1D542203B7AB0000C9341 /* Charts.framework */; };
+		F3612337203BD04700FE7751 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A1D542203B7AB0000C9341 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F377CD112023C31300E6AF9E /* GradesReportConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377CD102023C31300E6AF9E /* GradesReportConstants.swift */; };
+		F377CD162023C4E100E6AF9E /* GradesSummaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377CD152023C4E100E6AF9E /* GradesSummaryTableViewController.swift */; };
+		F388A486202542C800C802D9 /* SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F388A485202542C800C802D9 /* SubjectDetails.json */; };
+		F39BE387202D0AC400C45FF1 /* DemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39BE386202D0AC400C45FF1 /* DemoBaseViewController.swift */; };
+		F39BE389202D139E00C45FF1 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39BE388202D139E00C45FF1 /* BalloonMarker.swift */; };
+		F3AAB7FF202BC113004A1AF4 /* SubjectDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AAB7FE202BC113004A1AF4 /* SubjectDetailsModel.swift */; };
+		F3AAF4AD2034CB07005C43EE /* Subjects.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4AC2034CB07005C43EE /* Subjects.json */; };
+		F3AAF4B12034CC63005C43EE /* 1001SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4B02034CC63005C43EE /* 1001SubjectDetails.json */; };
+		F3AAF4B32034CCA1005C43EE /* 1002SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4B22034CCA1005C43EE /* 1002SubjectDetails.json */; };
+		F3AAF4B52034CCAF005C43EE /* 1003SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4B42034CCAF005C43EE /* 1003SubjectDetails.json */; };
+		F3AAF4B72034CCBE005C43EE /* 1004SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4B62034CCBE005C43EE /* 1004SubjectDetails.json */; };
+		F3AAF4B92034CCCE005C43EE /* 1005SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4B82034CCCE005C43EE /* 1005SubjectDetails.json */; };
+		F3AAF4BB2034CCDD005C43EE /* 1006SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4BA2034CCDD005C43EE /* 1006SubjectDetails.json */; };
+		F3AAF4BD2034CCEA005C43EE /* 1007SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F3AAF4BC2034CCEA005C43EE /* 1007SubjectDetails.json */; };
+		F3AAF4F72034D3BF005C43EE /* SubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AAF4F62034D3BF005C43EE /* SubjectModel.swift */; };
+		F3C948D42027F8F00073B2E5 /* SubjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C948D32027F8F00073B2E5 /* SubjectDetailsViewController.swift */; };
+		F3C948D62027F9A10073B2E5 /* ExamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C948D52027F9A10073B2E5 /* ExamDetailViewController.swift */; };
+		F3C948D9202802A20073B2E5 /* SubjectDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C948D7202802A20073B2E5 /* SubjectDetailsTableViewCell.swift */; };
+		F3C948DA202802A20073B2E5 /* SubjectDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C948D8202802A20073B2E5 /* SubjectDetailsTableViewCell.xib */; };
+		F3EC605320291491003FAFE1 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC605220291491003FAFE1 /* LineChartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F32B980F202284F600543877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32B97F2202284F600543877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32B97F9202284F600543877;
+			remoteInfo = GradesReportGra;
+		};
+		F32B981A202284F700543877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32B97F2202284F600543877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32B97F9202284F600543877;
+			remoteInfo = GradesReportGra;
+		};
+		F3612338203BD04700FE7751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+		F3A1D541203B7AB0000C9341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		F3A1D543203B7AB0000C9341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3EC60512029142F003FAFE1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3612337203BD04700FE7751 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F32B97FA202284F600543877 /* GradesReportGra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradesReportGra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32B97FD202284F600543877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F32B97FF202284F600543877 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F32B9802202284F600543877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F32B9804202284F600543877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32B9807202284F600543877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F32B9809202284F600543877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32B980E202284F600543877 /* GradesReportGraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradesReportGraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32B9812202284F600543877 /* GradesReportGraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesReportGraTests.swift; sourceTree = "<group>"; };
+		F32B9814202284F600543877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32B9819202284F700543877 /* GradesReportGraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradesReportGraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32B981D202284F700543877 /* GradesReportGraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesReportGraUITests.swift; sourceTree = "<group>"; };
+		F32B981F202284F700543877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32B986420228E7900543877 /* GradesReports.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GradesReports.storyboard; sourceTree = "<group>"; };
+		F32B986620228EE500543877 /* GradeSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		F32B986720228EE500543877 /* GradeSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradeSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		F377CD102023C31300E6AF9E /* GradesReportConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesReportConstants.swift; sourceTree = "<group>"; };
+		F377CD152023C4E100E6AF9E /* GradesSummaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesSummaryTableViewController.swift; sourceTree = "<group>"; };
+		F388A485202542C800C802D9 /* SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SubjectDetails.json; sourceTree = "<group>"; };
+		F39BE386202D0AC400C45FF1 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
+		F39BE388202D139E00C45FF1 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		F3AAB7FE202BC113004A1AF4 /* SubjectDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailsModel.swift; sourceTree = "<group>"; };
+		F3AAF4AC2034CB07005C43EE /* Subjects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Subjects.json; sourceTree = "<group>"; };
+		F3AAF4B02034CC63005C43EE /* 1001SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1001SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4B22034CCA1005C43EE /* 1002SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1002SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4B42034CCAF005C43EE /* 1003SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1003SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4B62034CCBE005C43EE /* 1004SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1004SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4B82034CCCE005C43EE /* 1005SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1005SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4BA2034CCDD005C43EE /* 1006SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1006SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4BC2034CCEA005C43EE /* 1007SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1007SubjectDetails.json; sourceTree = "<group>"; };
+		F3AAF4F62034D3BF005C43EE /* SubjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModel.swift; sourceTree = "<group>"; };
+		F3C948D32027F8F00073B2E5 /* SubjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailsViewController.swift; sourceTree = "<group>"; };
+		F3C948D52027F9A10073B2E5 /* ExamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDetailViewController.swift; sourceTree = "<group>"; };
+		F3C948D7202802A20073B2E5 /* SubjectDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F3C948D8202802A20073B2E5 /* SubjectDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		F3EC605220291491003FAFE1 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F32B97F7202284F600543877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3612336203BD04700FE7751 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32B980B202284F600543877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32B9816202284F700543877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F32B97F1202284F600543877 = {
+			isa = PBXGroup;
+			children = (
+				F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */,
+				F32B97FC202284F600543877 /* GradesReportGra */,
+				F32B9811202284F600543877 /* GradesReportGraTests */,
+				F32B981C202284F700543877 /* GradesReportGraUITests */,
+				F32B97FB202284F600543877 /* Products */,
+				F39BE383202CD91C00C45FF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F32B97FB202284F600543877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32B97FA202284F600543877 /* GradesReportGra.app */,
+				F32B980E202284F600543877 /* GradesReportGraTests.xctest */,
+				F32B9819202284F700543877 /* GradesReportGraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32B97FC202284F600543877 /* GradesReportGra */ = {
+			isa = PBXGroup;
+			children = (
+				F388A487202542DE00C802D9 /* Model */,
+				F388A4822025425C00C802D9 /* Data */,
+				F377CD142023C47600E6AF9E /* ViewControllers */,
+				F32B986320228E4000543877 /* Views */,
+				F32B9804202284F600543877 /* Assets.xcassets */,
+				F32B9806202284F600543877 /* LaunchScreen.storyboard */,
+				F32B9809202284F600543877 /* Info.plist */,
+			);
+			path = GradesReportGra;
+			sourceTree = "<group>";
+		};
+		F32B9811202284F600543877 /* GradesReportGraTests */ = {
+			isa = PBXGroup;
+			children = (
+				F32B9812202284F600543877 /* GradesReportGraTests.swift */,
+				F32B9814202284F600543877 /* Info.plist */,
+			);
+			path = GradesReportGraTests;
+			sourceTree = "<group>";
+		};
+		F32B981C202284F700543877 /* GradesReportGraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F32B981D202284F700543877 /* GradesReportGraUITests.swift */,
+				F32B981F202284F700543877 /* Info.plist */,
+			);
+			path = GradesReportGraUITests;
+			sourceTree = "<group>";
+		};
+		F32B986320228E4000543877 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F32B9801202284F600543877 /* Main.storyboard */,
+				F32B986420228E7900543877 /* GradesReports.storyboard */,
+				F3C948D8202802A20073B2E5 /* SubjectDetailsTableViewCell.xib */,
+				F32B986720228EE500543877 /* GradeSummaryTableViewCell.xib */,
+				F32B97FD202284F600543877 /* AppDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F377CD142023C47600E6AF9E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F32B97FF202284F600543877 /* LoginViewController.swift */,
+				F377CD152023C4E100E6AF9E /* GradesSummaryTableViewController.swift */,
+				F3C948D32027F8F00073B2E5 /* SubjectDetailsViewController.swift */,
+				F3C948D52027F9A10073B2E5 /* ExamDetailViewController.swift */,
+				F32B986620228EE500543877 /* GradeSummaryTableViewCell.swift */,
+				F3C948D7202802A20073B2E5 /* SubjectDetailsTableViewCell.swift */,
+				F3EC605220291491003FAFE1 /* LineChartViewController.swift */,
+				F39BE386202D0AC400C45FF1 /* DemoBaseViewController.swift */,
+				F39BE388202D139E00C45FF1 /* BalloonMarker.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F388A4822025425C00C802D9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F388A485202542C800C802D9 /* SubjectDetails.json */,
+				F377CD102023C31300E6AF9E /* GradesReportConstants.swift */,
+				F3AAF4AC2034CB07005C43EE /* Subjects.json */,
+				F3AAF4B02034CC63005C43EE /* 1001SubjectDetails.json */,
+				F3AAF4B22034CCA1005C43EE /* 1002SubjectDetails.json */,
+				F3AAF4B42034CCAF005C43EE /* 1003SubjectDetails.json */,
+				F3AAF4B62034CCBE005C43EE /* 1004SubjectDetails.json */,
+				F3AAF4B82034CCCE005C43EE /* 1005SubjectDetails.json */,
+				F3AAF4BA2034CCDD005C43EE /* 1006SubjectDetails.json */,
+				F3AAF4BC2034CCEA005C43EE /* 1007SubjectDetails.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F388A487202542DE00C802D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3AAB7FE202BC113004A1AF4 /* SubjectDetailsModel.swift */,
+				F3AAF4F62034D3BF005C43EE /* SubjectModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F39BE383202CD91C00C45FF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3A1D53D203B7AAF000C9341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3A1D542203B7AB0000C9341 /* Charts.framework */,
+				F3A1D544203B7AB0000C9341 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F32B97F9202284F600543877 /* GradesReportGra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32B9822202284F700543877 /* Build configuration list for PBXNativeTarget "GradesReportGra" */;
+			buildPhases = (
+				F32B97F6202284F600543877 /* Sources */,
+				F32B97F7202284F600543877 /* Frameworks */,
+				F32B97F8202284F600543877 /* Resources */,
+				F3EC60512029142F003FAFE1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3612339203BD04700FE7751 /* PBXTargetDependency */,
+			);
+			name = GradesReportGra;
+			productName = GradesReportGra;
+			productReference = F32B97FA202284F600543877 /* GradesReportGra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F32B980D202284F600543877 /* GradesReportGraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32B9825202284F700543877 /* Build configuration list for PBXNativeTarget "GradesReportGraTests" */;
+			buildPhases = (
+				F32B980A202284F600543877 /* Sources */,
+				F32B980B202284F600543877 /* Frameworks */,
+				F32B980C202284F600543877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32B9810202284F600543877 /* PBXTargetDependency */,
+			);
+			name = GradesReportGraTests;
+			productName = GradesReportGraTests;
+			productReference = F32B980E202284F600543877 /* GradesReportGraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F32B9818202284F700543877 /* GradesReportGraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32B9828202284F700543877 /* Build configuration list for PBXNativeTarget "GradesReportGraUITests" */;
+			buildPhases = (
+				F32B9815202284F700543877 /* Sources */,
+				F32B9816202284F700543877 /* Frameworks */,
+				F32B9817202284F700543877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32B981B202284F700543877 /* PBXTargetDependency */,
+			);
+			name = GradesReportGraUITests;
+			productName = GradesReportGraUITests;
+			productReference = F32B9819202284F700543877 /* GradesReportGraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F32B97F2202284F600543877 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = GradesReport;
+				TargetAttributes = {
+					F32B97F9202284F600543877 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F32B980D202284F600543877 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F32B97F9202284F600543877;
+					};
+					F32B9818202284F700543877 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F32B97F9202284F600543877;
+					};
+				};
+			};
+			buildConfigurationList = F32B97F5202284F600543877 /* Build configuration list for PBXProject "GradesReportGra" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F32B97F1202284F600543877;
+			productRefGroup = F32B97FB202284F600543877 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3A1D53D203B7AAF000C9341 /* Products */;
+					ProjectRef = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F32B97F9202284F600543877 /* GradesReportGra */,
+				F32B980D202284F600543877 /* GradesReportGraTests */,
+				F32B9818202284F700543877 /* GradesReportGraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F3A1D542203B7AB0000C9341 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = F3A1D541203B7AB0000C9341 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3A1D544203B7AB0000C9341 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = F3A1D543203B7AB0000C9341 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F32B97F8202284F600543877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32B986520228E7900543877 /* GradesReports.storyboard in Resources */,
+				F3AAF4B52034CCAF005C43EE /* 1003SubjectDetails.json in Resources */,
+				F32B986920228EE500543877 /* GradeSummaryTableViewCell.xib in Resources */,
+				F3AAF4B32034CCA1005C43EE /* 1002SubjectDetails.json in Resources */,
+				F32B9808202284F600543877 /* LaunchScreen.storyboard in Resources */,
+				F3AAF4AD2034CB07005C43EE /* Subjects.json in Resources */,
+				F3AAF4B72034CCBE005C43EE /* 1004SubjectDetails.json in Resources */,
+				F3C948DA202802A20073B2E5 /* SubjectDetailsTableViewCell.xib in Resources */,
+				F32B9805202284F600543877 /* Assets.xcassets in Resources */,
+				F32B9803202284F600543877 /* Main.storyboard in Resources */,
+				F3AAF4B92034CCCE005C43EE /* 1005SubjectDetails.json in Resources */,
+				F3AAF4B12034CC63005C43EE /* 1001SubjectDetails.json in Resources */,
+				F3AAF4BD2034CCEA005C43EE /* 1007SubjectDetails.json in Resources */,
+				F388A486202542C800C802D9 /* SubjectDetails.json in Resources */,
+				F3AAF4BB2034CCDD005C43EE /* 1006SubjectDetails.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32B980C202284F600543877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32B9817202284F700543877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F32B97F6202284F600543877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C948D42027F8F00073B2E5 /* SubjectDetailsViewController.swift in Sources */,
+				F3EC605320291491003FAFE1 /* LineChartViewController.swift in Sources */,
+				F32B9800202284F600543877 /* LoginViewController.swift in Sources */,
+				F39BE389202D139E00C45FF1 /* BalloonMarker.swift in Sources */,
+				F377CD112023C31300E6AF9E /* GradesReportConstants.swift in Sources */,
+				F377CD162023C4E100E6AF9E /* GradesSummaryTableViewController.swift in Sources */,
+				F39BE387202D0AC400C45FF1 /* DemoBaseViewController.swift in Sources */,
+				F3AAB7FF202BC113004A1AF4 /* SubjectDetailsModel.swift in Sources */,
+				F32B97FE202284F600543877 /* AppDelegate.swift in Sources */,
+				F3AAF4F72034D3BF005C43EE /* SubjectModel.swift in Sources */,
+				F3C948D9202802A20073B2E5 /* SubjectDetailsTableViewCell.swift in Sources */,
+				F3C948D62027F9A10073B2E5 /* ExamDetailViewController.swift in Sources */,
+				F32B986820228EE500543877 /* GradeSummaryTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32B980A202284F600543877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32B9813202284F600543877 /* GradesReportGraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32B9815202284F700543877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32B981E202284F700543877 /* GradesReportGraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F32B9810202284F600543877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32B97F9202284F600543877 /* GradesReportGra */;
+			targetProxy = F32B980F202284F600543877 /* PBXContainerItemProxy */;
+		};
+		F32B981B202284F700543877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32B97F9202284F600543877 /* GradesReportGra */;
+			targetProxy = F32B981A202284F700543877 /* PBXContainerItemProxy */;
+		};
+		F3612339203BD04700FE7751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = F3612338203BD04700FE7751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F32B9801202284F600543877 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32B9802202284F600543877 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F32B9806202284F600543877 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32B9807202284F600543877 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F32B9820202284F700543877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F32B9821202284F700543877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F32B9823202284F700543877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GradesReportGra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GradesReport.GradesReportGra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F32B9824202284F700543877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GradesReportGra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GradesReport.GradesReportGra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F32B9826202284F700543877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GradesReportGraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GradesReport.Dev.GradesReportGraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradesReportGra.app/GradesReportGra";
+			};
+			name = Debug;
+		};
+		F32B9827202284F700543877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GradesReportGraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GradesReport.Dev.GradesReportGraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradesReportGra.app/GradesReportGra";
+			};
+			name = Release;
+		};
+		F32B9829202284F700543877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GradesReportGraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GradesReport.Dev.GradesReportGraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GradesReportGra;
+			};
+			name = Debug;
+		};
+		F32B982A202284F700543877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GradesReportGraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GradesReport.Dev.GradesReportGraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GradesReportGra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F32B97F5202284F600543877 /* Build configuration list for PBXProject "GradesReportGra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32B9820202284F700543877 /* Debug */,
+				F32B9821202284F700543877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32B9822202284F700543877 /* Build configuration list for PBXNativeTarget "GradesReportGra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32B9823202284F700543877 /* Debug */,
+				F32B9824202284F700543877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32B9825202284F700543877 /* Build configuration list for PBXNativeTarget "GradesReportGraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32B9826202284F700543877 /* Debug */,
+				F32B9827202284F700543877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32B9828202284F700543877 /* Build configuration list for PBXNativeTarget "GradesReportGraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32B9829202284F700543877 /* Debug */,
+				F32B982A202284F700543877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F32B97F2202284F600543877 /* Project object */;
+}

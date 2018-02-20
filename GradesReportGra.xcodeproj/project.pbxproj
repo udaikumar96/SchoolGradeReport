@@ -17,8 +17,8 @@
 		F32B986520228E7900543877 /* GradesReports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32B986420228E7900543877 /* GradesReports.storyboard */; };
 		F32B986820228EE500543877 /* GradeSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B986620228EE500543877 /* GradeSummaryTableViewCell.swift */; };
 		F32B986920228EE500543877 /* GradeSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32B986720228EE500543877 /* GradeSummaryTableViewCell.xib */; };
-		F3612336203BD04700FE7751 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A1D542203B7AB0000C9341 /* Charts.framework */; };
-		F3612337203BD04700FE7751 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A1D542203B7AB0000C9341 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F361237D203BD92E00FE7751 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F361237A203BD8E600FE7751 /* Charts.framework */; };
+		F361237E203BD92E00FE7751 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F361237A203BD8E600FE7751 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F377CD112023C31300E6AF9E /* GradesReportConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377CD102023C31300E6AF9E /* GradesReportConstants.swift */; };
 		F377CD162023C4E100E6AF9E /* GradesSummaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377CD152023C4E100E6AF9E /* GradesSummaryTableViewController.swift */; };
 		F388A486202542C800C802D9 /* SubjectDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F388A485202542C800C802D9 /* SubjectDetails.json */; };
@@ -56,26 +56,26 @@
 			remoteGlobalIDString = F32B97F9202284F600543877;
 			remoteInfo = GradesReportGra;
 		};
-		F3612338203BD04700FE7751 /* PBXContainerItemProxy */ = {
+		F3612379203BD8E600FE7751 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A58A4ED274A941CA248EA921;
-			remoteInfo = Charts;
-		};
-		F3A1D541203B7AB0000C9341 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+			containerPortal = F3612374203BD8E600FE7751 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
 			remoteInfo = Charts;
 		};
-		F3A1D543203B7AB0000C9341 /* PBXContainerItemProxy */ = {
+		F361237B203BD8E600FE7751 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+			containerPortal = F3612374203BD8E600FE7751 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
 			remoteInfo = ChartsTests;
+		};
+		F361237F203BD92E00FE7751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3612374203BD8E600FE7751 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -86,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3612337203BD04700FE7751 /* Charts.framework in Embed Frameworks */,
+				F361237E203BD92E00FE7751 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,12 +110,12 @@
 		F32B986420228E7900543877 /* GradesReports.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GradesReports.storyboard; sourceTree = "<group>"; };
 		F32B986620228EE500543877 /* GradeSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		F32B986720228EE500543877 /* GradeSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradeSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		F3612374203BD8E600FE7751 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master 2/Charts.xcodeproj"; sourceTree = "<group>"; };
 		F377CD102023C31300E6AF9E /* GradesReportConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesReportConstants.swift; sourceTree = "<group>"; };
 		F377CD152023C4E100E6AF9E /* GradesSummaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesSummaryTableViewController.swift; sourceTree = "<group>"; };
 		F388A485202542C800C802D9 /* SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SubjectDetails.json; sourceTree = "<group>"; };
 		F39BE386202D0AC400C45FF1 /* DemoBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseViewController.swift; sourceTree = "<group>"; };
 		F39BE388202D139E00C45FF1 /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
-		F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		F3AAB7FE202BC113004A1AF4 /* SubjectDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailsModel.swift; sourceTree = "<group>"; };
 		F3AAF4AC2034CB07005C43EE /* Subjects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Subjects.json; sourceTree = "<group>"; };
 		F3AAF4B02034CC63005C43EE /* 1001SubjectDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1001SubjectDetails.json; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3612336203BD04700FE7751 /* Charts.framework in Frameworks */,
+				F361237D203BD92E00FE7751 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,7 @@
 		F32B97F1202284F600543877 = {
 			isa = PBXGroup;
 			children = (
-				F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */,
+				F3612374203BD8E600FE7751 /* Charts.xcodeproj */,
 				F32B97FC202284F600543877 /* GradesReportGra */,
 				F32B9811202284F600543877 /* GradesReportGraTests */,
 				F32B981C202284F700543877 /* GradesReportGraUITests */,
@@ -225,6 +225,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F3612375203BD8E600FE7751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F361237A203BD8E600FE7751 /* Charts.framework */,
+				F361237C203BD8E600FE7751 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F377CD142023C47600E6AF9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,15 +283,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F3A1D53D203B7AAF000C9341 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F3A1D542203B7AB0000C9341 /* Charts.framework */,
-				F3A1D544203B7AB0000C9341 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,7 +298,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F3612339203BD04700FE7751 /* PBXTargetDependency */,
+				F3612380203BD92E00FE7751 /* PBXTargetDependency */,
 			);
 			name = GradesReportGra;
 			productName = GradesReportGra;
@@ -380,8 +380,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F3A1D53D203B7AAF000C9341 /* Products */;
-					ProjectRef = F3A1D53C203B7AAF000C9341 /* Charts.xcodeproj */;
+					ProductGroup = F3612375203BD8E600FE7751 /* Products */;
+					ProjectRef = F3612374203BD8E600FE7751 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -394,18 +394,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F3A1D542203B7AB0000C9341 /* Charts.framework */ = {
+		F361237A203BD8E600FE7751 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = F3A1D541203B7AB0000C9341 /* PBXContainerItemProxy */;
+			remoteRef = F3612379203BD8E600FE7751 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F3A1D544203B7AB0000C9341 /* ChartsTests.xctest */ = {
+		F361237C203BD8E600FE7751 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = F3A1D543203B7AB0000C9341 /* PBXContainerItemProxy */;
+			remoteRef = F361237B203BD8E600FE7751 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -499,10 +499,10 @@
 			target = F32B97F9202284F600543877 /* GradesReportGra */;
 			targetProxy = F32B981A202284F700543877 /* PBXContainerItemProxy */;
 		};
-		F3612339203BD04700FE7751 /* PBXTargetDependency */ = {
+		F3612380203BD92E00FE7751 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = F3612338203BD04700FE7751 /* PBXContainerItemProxy */;
+			targetProxy = F361237F203BD92E00FE7751 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

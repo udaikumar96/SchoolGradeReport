@@ -86,8 +86,7 @@ extension SubjectDetailsViewController: UITableViewDataSource, UITableViewDelega
         customCell.category.text = subjectDetailObj.category
         customCell.percentage.text = subjectDetailObj.percentage
         customCell.score.text = subjectDetailObj.score
-        
-        return cell
+        return customCell
     }
     
     

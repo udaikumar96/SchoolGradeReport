@@ -68,8 +68,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iem-sW-krF">
-                                <rect key="frame" x="5" y="60" width="334.5" height="44.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iem-sW-krF" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="5" y="45" width="294.5" height="89.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -78,10 +78,10 @@
                             <constraint firstItem="Iem-sW-krF" firstAttribute="leading" secondItem="51z-dn-JSF" secondAttribute="leading" constant="5" id="6Iq-06-hRc"/>
                             <constraint firstAttribute="trailing" secondItem="0JA-OU-Lk3" secondAttribute="trailing" constant="10" id="Cmd-L1-g9y"/>
                             <constraint firstAttribute="trailing" secondItem="Rgs-TH-Tzx" secondAttribute="trailing" constant="15" id="MkK-WN-2oh"/>
-                            <constraint firstItem="Iem-sW-krF" firstAttribute="top" secondItem="Rgs-TH-Tzx" secondAttribute="bottom" id="PLF-cI-YaE"/>
-                            <constraint firstItem="0JA-OU-Lk3" firstAttribute="leading" secondItem="Iem-sW-krF" secondAttribute="trailing" id="UKQ-hs-0AG"/>
+                            <constraint firstItem="Iem-sW-krF" firstAttribute="top" secondItem="Rgs-TH-Tzx" secondAttribute="bottom" constant="-15" id="PLF-cI-YaE"/>
+                            <constraint firstItem="0JA-OU-Lk3" firstAttribute="leading" secondItem="Iem-sW-krF" secondAttribute="trailing" constant="40" id="UKQ-hs-0AG"/>
                             <constraint firstAttribute="bottom" secondItem="0JA-OU-Lk3" secondAttribute="bottom" constant="5" id="WAm-YC-5cY"/>
-                            <constraint firstAttribute="bottom" secondItem="Iem-sW-krF" secondAttribute="bottom" constant="5" id="ZW8-tl-aFP"/>
+                            <constraint firstAttribute="bottom" secondItem="Iem-sW-krF" secondAttribute="bottom" constant="-25" id="ZW8-tl-aFP"/>
                             <constraint firstItem="Rgs-TH-Tzx" firstAttribute="top" secondItem="51z-dn-JSF" secondAttribute="top" id="ec4-13-Lrx"/>
                             <constraint firstItem="Rgs-TH-Tzx" firstAttribute="leading" secondItem="51z-dn-JSF" secondAttribute="leading" constant="15" id="mQP-w3-QLh"/>
                         </constraints>
@@ -96,6 +96,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="chartView" destination="Iem-sW-krF" id="cQ2-9v-RuQ"/>
                 <outlet property="grade" destination="p9A-9c-DVu" id="Rik-KO-cU5"/>
                 <outlet property="percentage" destination="0Ne-Oo-B3O" id="NXL-gN-I3P"/>
                 <outlet property="subjectIndex" destination="p6X-PB-ScW" id="F91-L6-JGm"/>

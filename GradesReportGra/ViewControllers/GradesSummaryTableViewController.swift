@@ -64,6 +64,7 @@ class GradesSummaryTableViewController: UITableViewController {
         customCell.percentage.text = model.percentage
         customCell.grade.text = model.grade
         customCell.testDate.text = model.lastDate
+        customCell.bgColor = self.colorsArray[indexPath.row % colorsArray.count]
         return customCell
         
     }
